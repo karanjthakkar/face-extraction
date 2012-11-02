@@ -15,4 +15,5 @@ For users using OpenCV for the first time in a Visual Studio project, a custom p
 WARNING: This property sheet can be used only if you have the OpenCV installation path as: C:\OpenCV-2.4.2\opencv
 
 
-For any feedback, comment, advice, bugs, please contact me at: karanjthakkar (at) gmail (dot) com
+For any feedback, comment, advice, bugs, please contact me at:
+karanjthakkar (at) gmail (dot) com
