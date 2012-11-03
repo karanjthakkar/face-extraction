@@ -1,4 +1,4 @@
-#Face Extraction
+# Face Extraction
 
 This code uses the Haar Cascade Classifier to detect face in a video feed (webcam used here) and extracts 100 training samples
 
