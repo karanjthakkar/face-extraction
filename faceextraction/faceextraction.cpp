@@ -74,7 +74,7 @@ int main( int argc, const char** argv )
 /**
  * @function detectAndCrop
  */
-void detectAndDisplay(IplImage* frame )
+void detectAndCrop(IplImage* frame )
 {
 	CvSeq * pFaceRectSeq;               // memory-access interface
 	pStorageface = cvCreateMemStorage(0);
