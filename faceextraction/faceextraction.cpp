@@ -8,6 +8,7 @@
 #include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/imgproc/imgproc_c.h"
 
 #include <iostream>
 
@@ -55,10 +56,10 @@ int main( int argc, const char** argv )
 
 		sprintf(buf, "C:\\Training\\extract%d.jpg", i);
 		frame = cvLoadImage(buf, CV_LOAD_IMAGE_UNCHANGED);
-		cvSetImageROI(frame, cvRect(0, 0, minWidth, minHeight));
-		IplImage *cropImage = cvCreateImage(cvGetSize(frame), frame->depth, frame->nChannels);
+		IplImage* tmpsize = cvCreateImage(Size(minWidth, minHeight), frame->depth, frame->nChannels);	
+		cvResize(frame, tmpsize, INTER_CUBIC);
 		sprintf(buf1, "C:\\Training\\extract%d.jpg", i);
-		cvSaveImage(buf1, frame, 0);
+		cvSaveImage(buf1, tmpsize, 0);
 
 	}
 	
