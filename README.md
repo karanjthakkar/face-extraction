@@ -14,6 +14,7 @@ The build configuration for the project in Visual Studio was x64(Release).
 
 For users using OpenCV for the first time in a Visual Studio project, a custom property sheet has been provided **OpenCV.props**
 **WARNING**: This property sheet can be used only if:
+
 1. You have the OpenCV installation path as: `C:\OpenCV-2.4.2\opencv`
 2. You are using a 64-bit Windows 7 installation
 
